@@ -6,6 +6,7 @@ const User = require('../../models/User');
 const { check, validationResult } = require('express-validator');
 const axios = require('axios');
 const config = require('config');
+const normalize = require('normalize-url');
 
 // @route  GET api/profile/me
 // @desc   Test route
