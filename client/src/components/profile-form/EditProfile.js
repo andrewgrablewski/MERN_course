@@ -70,7 +70,7 @@ const EditProfile = ({
 
   return (
     <Fragment>
-      <h1 classNameName='large text-primary'>Create Your Profile</h1>
+      <h1 className='large text-primary'>Create Your Profile</h1>
       <p className='lead'>
         <i className='fas fa-user'></i> Let's get some information to make your
         profile stand out
@@ -98,8 +98,8 @@ const EditProfile = ({
             type='text'
             placeholder='Company'
             name='company'
-            value={company}
-            onChange={(e) => onChange(e)}
+            value={company || ''}
+            onChange={onChange}
           />
           <small className='form-text'>
             Could be your own company or one you work for
